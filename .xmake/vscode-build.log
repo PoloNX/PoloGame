@@ -1,0 +1,5 @@
+checking for platform ... windows
+checking for architecture ... x64
+checking for Microsoft Visual Studio (x64) version ... 2022
+note: the following packages were not found in any repository (check if they are spelled correctly):
+  -> libsdl2

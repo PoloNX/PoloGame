@@ -1,0 +1,15 @@
+{
+    cmdlines = {
+        "xmake -w",
+        [[xmake lua D:\Logiciel\XMake\actions\build\statistics.lua]],
+        [[xmake l c:\Users\geyre\.vscode\extensions\tboox.xmake-vscode-1.7.2\assets\default_target.lua]],
+        "xmake r PoloGame",
+        "xmake -w",
+        "xmake project -k vs",
+        "xmake project -k vs",
+        [[xmake l c:\Users\geyre\.vscode\extensions\tboox.xmake-vscode-1.7.3\assets\explorer.lua]],
+        [[xmake l c:\Users\geyre\.vscode\extensions\tboox.xmake-vscode-1.7.3\assets\config.lua]],
+        [[xmake l c:\Users\geyre\.vscode\extensions\tboox.xmake-vscode-1.7.3\assets\explorer.lua]],
+        [[xmake l c:\Users\geyre\.vscode\extensions\tboox.xmake-vscode-1.7.3\assets\config.lua]]
+    }
+}

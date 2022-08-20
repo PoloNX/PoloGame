@@ -1,0 +1,593 @@
+{
+    find_package_linux_x86_64_fetch_package_xmake = {
+        ["xmake::openssl_0542b0491c164d4dadba757a6e268ba2_release_1.1.1q_external"] = false,
+        ["xmake::libsdl_6e90535af06842e99aa48a4925d40ee2_release_2.0.22_external"] = false,
+        ["xmake::zlib_f77d14620f8f47b2a7615c6bc3246284_release_v1.2.12_external"] = false,
+        ["xmake::freetype_4510d9477f44478398acac84a650f3eb_release_2.12.1_external"] = false,
+        ["xmake::libpthread-stubs_614c096241464f3e9897bd4661143059_release_0.4_external"] = false,
+        ["xmake::libxext_ebd1b5b451434c32a7a71bc8cf20badb_release_1.3.4_external"] = false,
+        ["xmake::xtrans_576fb3beba324ff6ba8b503904027ceb_release_1.4.0_external"] = false,
+        ["xmake::libxau_07df5435233c4d868caa9d0f7e10a62e_release_1.0.9_external"] = false,
+        ["xmake::libffi_3760478a5e514b6396aaffaa11893feb_release_3.4.2_external"] = false,
+        ["xmake::libsdl_gfx_f618f247ba5b47a8a6c86746fc363302_release_1.0.4_external"] = {
+            linkdirs = {
+                "/home/charlie/.xmake/packages/l/libsdl_gfx/1.0.4/f618f247ba5b47a8a6c86746fc363302/lib"
+            },
+            static = true,
+            libfiles = {
+                "/home/charlie/.xmake/packages/l/libsdl_gfx/1.0.4/f618f247ba5b47a8a6c86746fc363302/lib/libSDL2_gfx.a"
+            },
+            sysincludedirs = {
+                "/home/charlie/.xmake/packages/l/libsdl_gfx/1.0.4/f618f247ba5b47a8a6c86746fc363302/include",
+                "/home/charlie/.xmake/packages/l/libsdl_gfx/1.0.4/f618f247ba5b47a8a6c86746fc363302/include/SDL2"
+            },
+            version = "1.0.4",
+            links = {
+                "SDL2_gfx"
+            }
+        },
+        ["xmake::ca-certificates_99b095605f394474b588722ba3b7979d_release_20220604_external"] = false,
+        ["xmake::libsdl_ttf_347661639f43449f89dd86bd814cee77_release_2.0.15_external"] = {
+            linkdirs = {
+                "/home/charlie/.xmake/packages/l/libsdl_ttf/2.0.15/347661639f43449f89dd86bd814cee77/lib"
+            },
+            static = true,
+            libfiles = {
+                "/home/charlie/.xmake/packages/l/libsdl_ttf/2.0.15/347661639f43449f89dd86bd814cee77/lib/libSDL2_ttf.a"
+            },
+            sysincludedirs = {
+                "/home/charlie/.xmake/packages/l/libsdl_ttf/2.0.15/347661639f43449f89dd86bd814cee77/include",
+                "/home/charlie/.xmake/packages/l/libsdl_ttf/2.0.15/347661639f43449f89dd86bd814cee77/include/SDL2"
+            },
+            version = "2.0.15",
+            links = {
+                "SDL2_ttf"
+            }
+        },
+        ["xmake::libsdl_image_52106b039e864865bbed0f67975bbed3_release_2.0.5_external"] = {
+            linkdirs = {
+                "/home/charlie/.xmake/packages/l/libsdl_image/2.0.5/52106b039e864865bbed0f67975bbed3/lib"
+            },
+            static = true,
+            libfiles = {
+                "/home/charlie/.xmake/packages/l/libsdl_image/2.0.5/52106b039e864865bbed0f67975bbed3/lib/libSDL2_image.a"
+            },
+            sysincludedirs = {
+                "/home/charlie/.xmake/packages/l/libsdl_image/2.0.5/52106b039e864865bbed0f67975bbed3/include",
+                "/home/charlie/.xmake/packages/l/libsdl_image/2.0.5/52106b039e864865bbed0f67975bbed3/include/SDL2"
+            },
+            version = "2.0.5",
+            links = {
+                "SDL2_image"
+            }
+        },
+        ["xmake::python_657bab6af48e42e29f5b9fc2b1ab5808_release_3.9.13_external"] = false,
+        ["xmake::libxdmcp_78672dd0294d4b21a7041b57aa194c10_release_1.1.3_external"] = false,
+        ["xmake::libx11_839c7658d2fc456ca78139a3f21cded9_release_1.7.3_external"] = false,
+        ["xmake::util-macros_31ceb591d38f4b8eaa0d68205fa2b8a3_release_1.19.2_external"] = false,
+        ["xmake::xcb-proto_47c387a4e1de43fcac017b2e60f17f14_release_1.14.1_external"] = false,
+        ["xmake::libxcb_db93669a5af1410f8d2bc04e79d40b41_release_1.14_external"] = false,
+        ["xmake::libsdl2_4e0143c97b65425b855ad5fd03038b6a_release_latest_external"] = false,
+        ["xmake::xorgproto_1ac158af33224fd1944a64d9f508842c_release_2021.5_external"] = false
+    },
+    find_program_gcc_arch_x86_64_plat_linux_checktoolld = {
+        ["g++"] = "/usr/bin/g++"
+    },
+    ["detect.tools.gcc.has_cflags"] = {
+        ["/usr/bin/gcc_12.1.1"] = {
+            ["--help"] = true,
+            ["-print-multiarch"] = true,
+            ["-save-temps"] = true,
+            ["-print-libgcc-file-name"] = true,
+            ["--target-help"] = true,
+            ["-pass-exit-codes"] = true,
+            ["-print-search-dirs"] = true,
+            ["-v"] = true,
+            ["-dumpmachine"] = true,
+            ["-dumpversion"] = true,
+            ["-time"] = true,
+            ["-Xlinker"] = true,
+            ["-Xassembler"] = true,
+            ["-print-multi-lib"] = true,
+            ["-S"] = true,
+            ["-shared"] = true,
+            ["-E"] = true,
+            ["--version"] = true,
+            ["-B"] = true,
+            ["-pie"] = true,
+            ["-print-sysroot-headers-suffix"] = true,
+            ["-print-sysroot"] = true,
+            ["--param"] = true,
+            ["-o"] = true,
+            ["-pipe"] = true,
+            ["-print-multi-os-directory"] = true,
+            ["-c"] = true,
+            ["-print-multi-directory"] = true,
+            ["-dumpspecs"] = true,
+            ["-x"] = true,
+            ["-no-canonical-prefixes"] = true,
+            ["-Xpreprocessor"] = true
+        }
+    },
+    ["detect.sdks.find_vcpkgdir"] = false,
+    find_program_fetch_package_system = {
+        ["pkg-config"] = "/usr/bin/pkg-config",
+        cmake = "/usr/bin/cmake",
+        ["pacman::automake"] = false,
+        ["apt::automake"] = false,
+        automake = "/usr/bin/automake",
+        python3 = "/usr/bin/python3"
+    },
+    find_programver_fetch_package_xmake = {
+        ["/usr/bin/pkg-config"] = "1.8.0",
+        ["/usr/bin/automake"] = "1.16.5",
+        ["/usr/bin/m4"] = "1.4.19",
+        ["/usr/bin/python"] = "3.10.5",
+        ["/usr/bin/cmake"] = "3.23.3",
+        ["/usr/bin/autoconf"] = "2.71"
+    },
+    find_programver_fetch_package_system = {
+        ["/usr/bin/python3"] = "3.10.5",
+        ["/usr/bin/pkg-config"] = "1.8.0",
+        ["/usr/bin/cmake"] = "3.23.3",
+        ["/usr/bin/automake"] = "1.16.5"
+    },
+    find_program_fetch_package_xmake = {
+        ["pkg-config"] = "/usr/bin/pkg-config",
+        cmake = "/usr/bin/cmake",
+        autoconf = "/usr/bin/autoconf",
+        python = "/usr/bin/python",
+        m4 = "/usr/bin/m4",
+        automake = "/usr/bin/automake"
+    },
+    find_program_gcc_arch_x86_64_plat_linux_checktoolcxx = {
+        gcc = "/usr/bin/gcc"
+    },
+    find_program = {
+        ["pkg-config"] = "/usr/bin/pkg-config",
+        pacman = "/usr/bin/pacman",
+        unzip = "/usr/bin/unzip",
+        ["/usr/bin/g++"] = "/usr/bin/g++",
+        dmd = false,
+        git = "/usr/bin/git",
+        tar = "/usr/bin/tar",
+        zig = false,
+        gcc = "/usr/bin/gcc",
+        ldc2 = false,
+        brew = false,
+        ["/usr/bin/gcc"] = "/usr/bin/gcc",
+        emerge = false,
+        gdc = false,
+        dpkg = false,
+        gzip = "/usr/bin/gzip"
+    },
+    find_programver = {
+        ["/usr/bin/gcc"] = "12.1.1",
+        ["/usr/bin/g++"] = "12.1.1"
+    },
+    ["detect.tools.gcc.has_ldflags"] = {
+        ["/usr/bin/g++_12.1.1"] = {
+            ["-static"] = true,
+            ["--sort-section"] = true,
+            ["--default-imported-symver"] = true,
+            ["--no-warn-search-mismatch"] = true,
+            ["--auxiliary"] = true,
+            ["-A"] = true,
+            ["-T"] = true,
+            ["--relocatable"] = true,
+            ["--require-defined"] = true,
+            ["--kill-at"] = true,
+            ["-init"] = true,
+            ["--no-undefined-version"] = true,
+            ["-EL"] = true,
+            ["--emit-relocs"] = true,
+            ["-c"] = true,
+            ["-L"] = true,
+            ["--disable-auto-import"] = true,
+            ["--filter"] = true,
+            ["--help"] = true,
+            ["--whole-archive"] = true,
+            ["-Bsymbolic"] = true,
+            ["--disable-reloc-section"] = true,
+            ["-dp"] = true,
+            ["--allow-shlib-undefined"] = true,
+            ["--cref"] = true,
+            ["--no-whole-archive"] = true,
+            ["--no-print-gc-sections"] = true,
+            ["--warn-once"] = true,
+            ["-l"] = true,
+            ["-u"] = true,
+            ["--fatal-warnings"] = true,
+            ["-Bgroup"] = true,
+            ["--gc-keep-exported"] = true,
+            ["--print-gc-sections"] = true,
+            ["-EB"] = true,
+            ["--print-sysroot"] = true,
+            ["--gc-sections"] = true,
+            ["--no-export-dynamic"] = true,
+            ["--warn-unresolved-symbols"] = true,
+            ["--export-all-symbols"] = true,
+            ["--verbose"] = true,
+            ["--orphan-handling"] = true,
+            ["--disable-multiple-abs-defs"] = true,
+            ["--no-strip-discarded"] = true,
+            ["--defsym"] = true,
+            ["--no-copy-dt-needed-entries"] = true,
+            ["--enable-new-dtags"] = true,
+            ["--relax"] = true,
+            ["--just-symbols"] = true,
+            ["--print-memory-usage"] = true,
+            ["--minor-subsystem-version"] = true,
+            ["--map-whole-files"] = true,
+            ["--discard-locals"] = true,
+            ["--no-allow-shlib-undefined"] = true,
+            ["-Bshareable"] = true,
+            ["-flto"] = true,
+            ["-y"] = true,
+            ["--strip-debug"] = true,
+            ["--demangle"] = true,
+            ["--check-sections"] = true,
+            ["--error-unresolved-symbols"] = true,
+            ["--major-image-version"] = true,
+            ["--reduce-memory-overheads"] = true,
+            ["--large-address-aware"] = true,
+            ["-fini"] = true,
+            ["--as-needed"] = true,
+            ["-a"] = true,
+            ["--export-dynamic"] = true,
+            ["--discard-all"] = true,
+            ["--major-subsystem-version"] = true,
+            ["-z"] = true,
+            ["--enable-reloc-section"] = true,
+            ["--add-stdcall-alias"] = true,
+            ["--no-check-sections"] = true,
+            ["--disable-new-dtags"] = true,
+            ["-rpath"] = true,
+            ["--end-group"] = true,
+            ["-debug"] = true,
+            ["--heap"] = true,
+            ["--trace"] = true,
+            ["-Y"] = true,
+            ["--exclude-libs"] = true,
+            ["--no-gc-sections"] = true,
+            ["--default-symver"] = true,
+            ["--format"] = true,
+            ["--dynamic-linker"] = true,
+            ["--library"] = true,
+            ["--oformat"] = true,
+            ["--no-eh-frame-hdr"] = true,
+            ["-no-pie"] = true,
+            ["-dT"] = true,
+            ["--disable-long-section-names"] = true,
+            ["-I"] = true,
+            ["--force-exe-suffix"] = true,
+            ["--strip-discarded"] = true,
+            ["-R"] = true,
+            ["--stats"] = true,
+            ["--no-warn-rwx-segments"] = true,
+            ["--trace-symbol"] = true,
+            ["--no-as-needed"] = true,
+            ["-b"] = true,
+            ["--pop-state"] = true,
+            ["--library-path"] = true,
+            ["--exclude-modules-for-implib"] = true,
+            ["--minor-image-version"] = true,
+            ["-Bno-symbolic"] = true,
+            ["--disable-stdcall-fixup"] = true,
+            ["-nostdlib"] = true,
+            ["--traditional-format"] = true,
+            ["--major-os-version"] = true,
+            ["--no-omagic"] = true,
+            ["-m"] = true,
+            ["--print-map"] = true,
+            ["-Map"] = true,
+            ["-plugin"] = true,
+            ["--unique"] = true,
+            ["--enable-long-section-names"] = true,
+            ["--no-dynamic-linker"] = true,
+            ["--allow-multiple-definition"] = true,
+            ["--omagic"] = true,
+            ["-plugin-opt"] = true,
+            ["--warn-common"] = true,
+            ["--version"] = true,
+            ["--dependency-file"] = true,
+            ["--no-fatal-warnings"] = true,
+            ["--support-old-code"] = true,
+            ["--warn-section-align"] = true,
+            ["--enable-auto-import"] = true,
+            ["-o"] = true,
+            ["-Trodata-segment"] = true,
+            ["-g"] = true,
+            ["--warn-duplicate-exports"] = true,
+            ["--copy-dt-needed-entries"] = true,
+            ["-P"] = true,
+            ["--export-dynamic-symbol-list"] = true,
+            ["--mri-script"] = true,
+            ["--eh-frame-hdr"] = true,
+            ["--ignore-unresolved-symbol"] = true,
+            ["--ld-generated-unwind-info"] = true,
+            ["--retain-symbols-file"] = true,
+            ["--push-state"] = true,
+            ["--enable-stdcall-fixup"] = true,
+            ["--ctf-variables"] = true,
+            ["-G"] = true,
+            ["--dynamic-list-cpp-typeinfo"] = true,
+            ["--enable-non-contiguous-regions"] = true,
+            ["--split-by-file"] = true,
+            ["--dynamic-list-cpp-new"] = true,
+            ["--no-warn-execstack"] = true,
+            ["--version-exports-section"] = true,
+            ["--undefined"] = true,
+            ["--gpsize"] = true,
+            ["--subsystem"] = true,
+            ["--no-print-map-discarded"] = true,
+            ["--stack"] = true,
+            ["-Tldata-segment"] = true,
+            ["--output"] = true,
+            ["-soname"] = true,
+            ["--exclude-symbols"] = true,
+            ["-Ttext-segment"] = true,
+            ["--no-ld-generated-unwind-info"] = true,
+            ["--warn-rwx-segments"] = true,
+            ["--enable-non-contiguous-regions-warnings"] = true,
+            ["-h"] = true,
+            ["--warn-execstack"] = true,
+            ["-Ur"] = true,
+            ["--start-group"] = true,
+            ["--no-accept-unknown-input-arch"] = true,
+            ["-O"] = true,
+            ["-V"] = true,
+            ["--dynamic-list"] = true,
+            ["--no-ctf-variables"] = true,
+            ["--enable-extra-pe-debug"] = true,
+            ["--target-help"] = true,
+            ["--image-base"] = true,
+            ["--disable-runtime-pseudo-reloc"] = true,
+            ["--task-link"] = true,
+            ["--entry"] = true,
+            ["-Tbss"] = true,
+            ["--no-demangle"] = true,
+            ["-Ttext"] = true,
+            ["--no-keep-memory"] = true,
+            ["--accept-unknown-input-arch"] = true,
+            ["--file-alignment"] = true,
+            ["--dll"] = true,
+            ["-F"] = true,
+            ["--strip-all"] = true,
+            ["-assert"] = true,
+            ["-Tdata"] = true,
+            ["--section-alignment"] = true,
+            ["--minor-os-version"] = true,
+            ["--export-dynamic-symbol"] = true,
+            ["--error-handling-script"] = true,
+            ["-e"] = true,
+            ["--enable-extra-pep-debug"] = true,
+            ["--version-script"] = true,
+            ["--architecture"] = true,
+            ["--spare-dynamic-tags"] = true,
+            ["--no-define-common"] = true,
+            ["--section-start"] = true,
+            ["--no-map-whole-files"] = true,
+            ["--enable-auto-image-base"] = true,
+            ["--wrap"] = true,
+            ["--no-relax"] = true,
+            ["--output-def"] = true,
+            ["--print-map-discarded"] = true,
+            ["--nmagic"] = true,
+            ["--no-undefined"] = true,
+            ["--force-group-allocation"] = true,
+            ["--default-script"] = true,
+            ["-qmagic"] = true,
+            ["--no-warn-mismatch"] = true,
+            ["--warn-constructors"] = true,
+            ["--sort-common"] = true,
+            ["--warn-alternate-em"] = true,
+            ["--split-by-reloc"] = true,
+            ["--compat-implib"] = true,
+            ["--pic-executable"] = true,
+            ["--warn-multiple-gp"] = true,
+            ["--exclude-all-symbols"] = true,
+            ["-Qy"] = true,
+            ["-Bsymbolic-functions"] = true,
+            ["-rpath-link"] = true,
+            ["--script"] = true,
+            ["--disable-auto-image-base"] = true,
+            ["-f"] = true,
+            ["--dynamic-list-data"] = true,
+            ["--out-implib"] = true,
+            ["--discard-none"] = true,
+            ["--enable-runtime-pseudo-reloc"] = true,
+            ["--print-output-format"] = true,
+            ["--warn-textrel"] = true,
+            ["--disable-large-address-aware"] = true
+        }
+    },
+    ["lib.detect.has_flags"] = {
+        ["linux_x86_64_/usr/bin/gcc_12.1.1_cxx_cxflags__-fPIC"] = true,
+        ["linux_x86_64_/usr/bin/gcc_12.1.1_cxx_cxflags__-std=c++20"] = true,
+        ["linux_x86_64_/usr/bin/g++_12.1.1_ld_ldflags_-m64 -m64_-pthread"] = true,
+        ["linux_x86_64_/usr/bin/gcc_12.1.1_cxx_cxflags__-MMD -MF"] = true,
+        ["linux_x86_64_/usr/bin/g++_12.1.1_ld_cxflags__-fPIC"] = true,
+        ["linux_x86_64_/usr/bin/gcc_12.1.1_cxx_cxflags__-fdiagnostics-color=always"] = true,
+        ["linux_x86_64_/usr/bin/gcc_12.1.1_cxx_cxflags__-pthread"] = true
+    },
+    find_package_linux_x86_64_fetch_package_system = {
+        ["ca-certificates_99b095605f394474b588722ba3b7979d_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "20210603",
+            links = { }
+        },
+        ["apt::libxdmcp-dev_78672dd0294d4b21a7041b57aa194c10_release_external"] = false,
+        ["apt::libxau-dev_07df5435233c4d868caa9d0f7e10a62e_release_external"] = false,
+        ["libpthread-stubs_614c096241464f3e9897bd4661143059_release_external"] = false,
+        ["apt::xtrans-dev_576fb3beba324ff6ba8b503904027ceb_release_external"] = false,
+        ["pacman::xtrans_576fb3beba324ff6ba8b503904027ceb_release_external"] = false,
+        ["pacman::libffi_3760478a5e514b6396aaffaa11893feb_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "3.4.2",
+            links = {
+                "ffi"
+            }
+        },
+        libsdl2_4e0143c97b65425b855ad5fd03038b6a_release_external = {
+            linkdirs = {
+                "/usr/lib"
+            },
+            shflags = {
+                "-pthread"
+            },
+            ldflags = {
+                "-pthread"
+            },
+            version = "2.0.22",
+            sysincludedirs = {
+                "/usr/include/SDL2"
+            },
+            defines = {
+                "_REENTRANT"
+            },
+            links = {
+                "SDL2"
+            }
+        },
+        ["pacman::libxau_07df5435233c4d868caa9d0f7e10a62e_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "1.0.9",
+            links = {
+                "Xau"
+            }
+        },
+        libxext_ebd1b5b451434c32a7a71bc8cf20badb_release_external = {
+            linkdirs = {
+                "/usr/lib"
+            },
+            version = "1.3.4",
+            links = {
+                "Xext"
+            }
+        },
+        ["pacman::libx11_839c7658d2fc456ca78139a3f21cded9_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "1.8.1",
+            links = {
+                "X11-xcb",
+                "xcb",
+                "X11"
+            }
+        },
+        ["apt::libxext-dev_ebd1b5b451434c32a7a71bc8cf20badb_release_external"] = false,
+        ["pkgconfig::freetype2_4510d9477f44478398acac84a650f3eb_release_external"] = {
+            linkdirs = {
+                "/usr/lib"
+            },
+            sysincludedirs = {
+                "/usr/include/freetype2",
+                "/usr/include/libpng16",
+                "/usr/include/harfbuzz",
+                "/usr/include/glib-2.0",
+                "/usr/lib/glib-2.0/include",
+                "/usr/include/sysprof-4"
+            },
+            cxflags = {
+                "-pthread"
+            },
+            links = {
+                "freetype"
+            }
+        },
+        ["apt::libffi-dev_3760478a5e514b6396aaffaa11893feb_release_external"] = false,
+        ["python_657bab6af48e42e29f5b9fc2b1ab5808_release_3.x_external"] = {
+            linkdirs = { },
+            sysincludedirs = {
+                "/usr/include/python3.10"
+            },
+            version = "3.10",
+            links = {
+                "python3.10"
+            }
+        },
+        ["pacman::libxmdcp_78672dd0294d4b21a7041b57aa194c10_release_external"] = false,
+        ["apt::libx11-dev_839c7658d2fc456ca78139a3f21cded9_release_external"] = false,
+        ["pacman::libxcb_db93669a5af1410f8d2bc04e79d40b41_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "1.15",
+            links = {
+                "xcb-composite",
+                "xcb-damage",
+                "xcb-dpms",
+                "xcb-dri2",
+                "xcb-dri3",
+                "xcb-glx",
+                "xcb-present",
+                "xcb-randr",
+                "xcb-record",
+                "xcb-render",
+                "xcb-res",
+                "xcb-screensaver",
+                "xcb-shape",
+                "xcb-shm",
+                "xcb-sync",
+                "xcb-xf86dri",
+                "xcb-xfixes",
+                "xcb-xinerama",
+                "xcb-xinput",
+                "xcb-xkb",
+                "xcb-xtest",
+                "xcb-xv",
+                "xcb-xvmc",
+                "xcb"
+            }
+        },
+        ["apt::libxcb1-dev_db93669a5af1410f8d2bc04e79d40b41_release_external"] = false,
+        ["pkgconfig::xproto_1ac158af33224fd1944a64d9f508842c_release_external"] = false,
+        openssl_0542b0491c164d4dadba757a6e268ba2_release_external = {
+            linkdirs = {
+                "/usr/lib"
+            },
+            version = "1.1.1q",
+            links = {
+                "ssl",
+                "crypto"
+            }
+        },
+        ["util-macros_31ceb591d38f4b8eaa0d68205fa2b8a3_release_external"] = false,
+        ["pacman::zlib_f77d14620f8f47b2a7615c6bc3246284_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "1.2.12",
+            links = {
+                "z"
+            }
+        },
+        ["xcb-proto_47c387a4e1de43fcac017b2e60f17f14_release_external"] = {
+            linkdirs = { },
+            sysincludedirs = { },
+            version = "1.15.2",
+            links = { }
+        },
+        ["apt::x11proto-dev_1ac158af33224fd1944a64d9f508842c_release_external"] = false,
+        xorgproto_1ac158af33224fd1944a64d9f508842c_release_external = {
+            linkdirs = { },
+            sysincludedirs = {
+                "/usr/include/X11/dri"
+            },
+            version = "2.1.1",
+            links = { }
+        },
+        xtrans_576fb3beba324ff6ba8b503904027ceb_release_external = false,
+        libxdmcp_78672dd0294d4b21a7041b57aa194c10_release_external = {
+            linkdirs = {
+                "/usr/lib"
+            },
+            version = "1.1.3",
+            links = {
+                "Xdmcp"
+            }
+        }
+    }
+}
